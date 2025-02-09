@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+}
+#root{
+    width:60%;
+    margin: 15vh auto;
+    /* border:1px solid black; */
+}
+#parent{
+    padding:40px;
+    border:1px solid black;
+    border-radius:20px;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    background-color: #fff;
+
+    div{
+        display:flex;
+        flex-direction: column;
+        gap:10px; 
+
+        a{
+            font-size: 23px;
+        }
+
+        p{
+            font-size: 18px;
+        }
+    }
+}
+
+#heading{
+   display:flex;
+   flex-direction: column;
+   gap:20px;
+}
+
+@media(max-width:660px){
+    #root{
+        width: 100%;
+        margin:15vh auto;
+    }
+}
